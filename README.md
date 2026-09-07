@@ -23,7 +23,7 @@ Its a Python QTWeb Gradio interface for converting ANY image format to ANY imgag
 
 ## Requirements:
 Needs re-assessment, however..
-- Windows 10/11 -  "Windows 11 & 10: ✅ Fully Supported. This is the primary target for your current installer." -GLM
+- "Windows 8.1/10/11" -Qwen - "Windows 11 & 10" -GLM. Opinions differ, I use/test it on Windows 10.
 - [NConvert](https://www.xnview.com/en/nconvert) - ~500 image formats supported (installed by installer).
 - Python 3.10-3.12 - Tested on, 3.10 and 3.12, but ensure python.exe is, on system PATH or in `C:\Program Files\Python3##" (where ## is the version).
 - Powershell 5.1+ - Needs to be re-assessed for versioning, but its for the text buffer. 
