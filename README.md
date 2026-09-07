@@ -1,5 +1,5 @@
 # NConvert-Interface
-Status: Working - Experimental currently, recetly re-implemented VENV and built-in browsers, we have also gone from windows 10-11 compatibility to windows 8.1-10.
+Status: Working - Recently had overhaul and assessment.
 
 ### Description:
 Its a Python QTWeb Gradio interface for converting ANY image format to ANY imgage format, even rare ones like .pspimage, all made possible through NConvert binary command line tool. The program provides a user-friendly menu to set the source folder, input file format, and desired output format. The scripts ensures efficient and seamless conversion and management of image files, making it a practical tool for users needing to process multiple common format such as `.jpg`, `.bmp`, `.png`, etc, and also less common formats such as`.pspimage`, and vice versa, and another thing, it does this recursively through subfolders, so you can just aim it at windows pictures folder, and everything will be where it was, just in the new format too.
@@ -23,9 +23,9 @@ Its a Python QTWeb Gradio interface for converting ANY image format to ANY imgag
 
 ## Requirements:
 Needs re-assessment, however..
-- Windows 8.1-10 - For now I am programming towards compatibility with Windows 8.1-11, however version <=1.2 supposedly has cases of operation/install for 7-11 compatibility.
+- Windows 10/11 (read note) -  Windows 11 & 10: ✅ Fully Supported. This is the primary target for your current installer.
 - [NConvert](https://www.xnview.com/en/nconvert) - ~500 image formats supported (installed by installer).
-- Python 3.10+ - Tested on 3.10/3.12, but ensure python.exe is on system PATH.
+- Python 3.10-3.12 - Tested on, 3.10 and 3.12, but ensure python.exe is, on system PATH or in `C:\Program Files\Python3##" (where ## is the version).
 - Powershell 5.1+ - Needs to be assessed, but its for the text buffer. 
 - Internet - Installer requires internet for install of Python libraries etc.
 
@@ -49,6 +49,14 @@ Here are my current instructions...
 - Thanks to, DeepSeek v2.5-v3 and GPT-4o and Claudev4 and Grok and Qwen3-Max, for assistance in programming. 
 - Thanks to [XnView Software](https://www.xnview.com/en/) for, creating and hosting, [NConvert](https://www.xnview.com/en/nconvert/), the binary behind my frontend.
 - NConvert-Batch is the Windows version of [NConvert-Bash](https://github.com/wiseman-timelord/NConvert-Bash).
+
+### STRUCTURE:
+- Pre-install...
+```
+.\NConvert-Interface.bat   (runs batch menu, producing options to install or launch.
+.\launcher.py              (the main program)
+.\installer.py             (the installer, run first).
+```
 
 ### Development:
 - If the program gets too big for one script (which is currently not the case), then create new `.\scripts\utilities.py`, and move all non core functions (list) out of launcher.py into utilities.
