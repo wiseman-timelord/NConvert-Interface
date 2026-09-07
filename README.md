@@ -1,4 +1,4 @@
-# NConvert-Gradio-Batch
+# NConvert-Interface
 Status: Working - Experimental currently, recetly re-implemented VENV and built-in browsers, we have also gone from windows 10-11 compatibility to windows 8.1-10.
 
 ### Description:
@@ -18,90 +18,8 @@ Its a Python QTWeb Gradio interface for converting ANY image format to ANY imgag
 - The Video Demonstration on YouTube (for v1.00-Final)...
 <br>[![NConvert-Batch on YouTube](./media/wisetime_youtube.jpg)](https://www.youtube.com/watch?v=ECydHjJ04U4)
 
-- The NConvert-Batch Gradio WebUi...
+- The NConvert-Interface WebUi...
 ![Alternative text](https://github.com/wiseman-timelord/NConvertBatch/blob/main/media/gradio_interface.jpg)
-
-- The installation processes, showing a Clean Install...
-<details> 
-
-    ===============================================================================
-        NConvert-Gradio-Batch — Clean Install
-    ===============================================================================
-    
-    ✓ Python 3.12 detected
-    
-    -------------------------------------------------------------------------------
-        Phase 1: Purge
-    -------------------------------------------------------------------------------
-    
-    Purging data directory: C:\Media_Files\NConvert-Gradio-Batch\NConvert-Gradio-Batch\data
-    ✓ Data directory removed
-    Purging workspace directory: C:\Media_Files\NConvert-Gradio-Batch\NConvert-Gradio-Batch\temp
-    ✓ Workspace directory removed
-    
-    Uninstalling existing application packages...
-    ✓ Application packages uninstalled
-    -------------------------------------------------------------------------------
-        Phase 2: Fresh Install
-    -------------------------------------------------------------------------------
-    
-    ✓ Workspace directory ready: C:\Media_Files\NConvert-Gradio-Batch\NConvert-Gradio-Batch\temp
-    NConvert not found, attempting download...
-    Detected architecture: 64-bit (x64) [machine=amd64, platform.architecture=64bit]
-    Downloading NConvert 64-bit from: https://download.xnview.com/NConvert-win64.zip
-    Found partial download (0.0 MB) → will attempt to resume
-    
-    Download attempt 1/4 - Starting download...
-    Progress:  74%  (   7.7/10.4 MB)
-    
-    Incomplete download detected (8087904 / 10885373 bytes)
-    
-    Download failed: Download incomplete
-    Retrying in 4 seconds... (attempt 2/4)
-    
-    Download attempt 2/4 - Resuming download...
-    Progress: 100%  (  10.4/10.4 MB)
-    Download completed successfully ✓
-    Extracting: nconvert-q12wkfhp.zip
-    ✓ Extraction completed
-    Moved: Formats.txt
-    Moved: license.txt
-    Moved: nconvert.exe
-    Moved: plugins
-    Moved: Plugins.txt
-    Moved: ReadMe.txt
-    Moved: Usage.txt
-    Moved: vcomp120.dll
-    Moved: WhatsNew.txt
-    ✓ Moved 9 items to .\data\NConvert\
-    ✓ NConvert installation completed
-    
-    Upgrading build tools (pip, setuptools) to latest...
-    → Upgrading pip to latest version...
-    ✓ pip upgraded successfully
-    → Upgrading setuptools to latest version...
-    ✓ setuptools upgraded successfully
-    
-    Installing pinned application packages...
-    (This includes PyQt6-WebEngine for the built-in browser)
-    ✓ All application packages installed successfully
-    ✓ Default persistent config created: data/persistent.json
-    
-    Verifying critical components...
-    ✓ nconvert.exe found at .\data\NConvert\
-    ✓ gradio available
-    ✓ pandas available
-    ✓ numpy available
-    ✓ psutil available
-    ✓ PyQt6-WebEngine available
-    ✓ All critical components verified successfully
-    
-    ===============================================================================
-    ✓ Clean installation completed successfully!
-    
-    You can now run NConvert-Gradio-Batch.bat
-   
-</details>
 
 ## Requirements:
 Needs re-assessment, however..
@@ -115,10 +33,10 @@ Needs re-assessment, however..
 Here are my current instructions...
 ```
 1. Downlaod latest release, and unpack to a suitable location.
-2. Run `NConvert-Gradio-Batch.Bat` by right click `Run as Administrator`, as we are doing, complex recursive file operations under the interface and downloading/unpacking NConvert in the installer. 
+2. Run `NConvert-Interface.Bat` by right click `Run as Administrator`, as we are doing, complex recursive file operations under the interface and downloading/unpacking NConvert in the installer. 
 - It is optional to manually download/unpack NConvert to ".\data\NConvert\*", and the installer will detect it, but otherwise the installer would handle the download/install if there is no NConvert unpacked there. This may help if there are for some reason network issues.
 3. Install Requirements from menu through option `2` on the batch menu, it will run `.\installer.py`, which will install everything you require via web/pip. 
-4. After requirements are installed, then run `NConvert-Batch` from `1.` on the batch menu, and if the gradio interface does not pop-up in its own built-in browser window.
+4. After requirements are installed, then run `NConvert-Interface` from `1.` on the batch menu, and if the gradio interface does not pop-up in its own built-in browser window.
 5. Configure the settings in the browser interface, if your file format preference is not in the list, then edit relevant lists in python script by replace appropriate extension text.
 6. When all setting are correct, then 1st ensure you noticed the `Delete Original Files?` tickbox, and if you did, then click `Start Conversion`, and it will convert the files, as  you have specified, over-writing as it goes.
 7. Check the image folders, I saved you potentially hours of work, but I did say I was a TimeLord ha.
@@ -133,8 +51,7 @@ Here are my current instructions...
 - NConvert-Batch is the Windows version of [NConvert-Bash](https://github.com/wiseman-timelord/NConvert-Bash).
 
 ### Development:
-- Merge, "NConvert-Batch" and "NConvert-Bash", into "NConvert-GUI", with Dual-mode scripts. Includine introduction of ".\scripts\configure.py" for, globals and load/save config. Requiring the deletion of project "NConvert-Bash". This will not be able to be done until I have a Ubuntu setup again.
-- Rename "program.py" to "launcher.py", then add `.\scripts\utilities.py`, and move all non core functions (list) out of launcher.py into utilities.
+- If the program gets too big for one script (which is currently not the case), then create new `.\scripts\utilities.py`, and move all non core functions (list) out of launcher.py into utilities.
 - Need additional option in batch menu, to launch without debug (command prompt) being open in background.
 
 ## DISCLAIMER:
