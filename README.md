@@ -50,7 +50,7 @@ Here are my current instructions...
 ### CREDITS:
 - Thanks to, DeepSeek and GPT and Claud and Grok and Qwen and GLM, for assistance in programming. 
 - Thanks to [XnView Software](https://www.xnview.com/en/) for, creating and hosting, [NConvert](https://www.xnview.com/en/nconvert/), the binary behind my frontend.
-- NConvert-Batch is the Windows version of [NConvert-Bash](https://github.com/wiseman-timelord/NConvert-Bash).
+- NConvert-Interface is the Windows version of [NConvert-Bash](https://github.com/wiseman-timelord/NConvert-Bash).
 
 ### STRUCTURE:
 - Pre-install...
