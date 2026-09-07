@@ -1,7 +1,7 @@
 # script: installer.py
 """
-NConvert-Gradio-Batch Installer
-Handles all installation requirements for NConvert-Gradio-Batch application
+NConvert-Interface Installer
+Handles all installation requirements for NConvert-Interface application
 """
 import os
 import sys
@@ -574,7 +574,7 @@ class NConvertInstaller:
     def run_regular_install(self):
         """Regular Install / Refresh: install or update everything in-place."""
         self.clear_screen()
-        self.print_header("NConvert-Gradio-Batch — Regular Install / Refresh")
+        self.print_header("NConvert-Interface — Regular Install / Refresh")
 
         if not self.check_python_version():
             return False
@@ -602,7 +602,7 @@ class NConvertInstaller:
         print("\n" + "=" * SEPARATOR_LENGTH)
         if success:
             print("✓ Installation completed successfully!")
-            print("\nYou can now run NConvert-Gradio-Batch.bat")
+            print("\nYou can now run NConvert-Interface.bat")
         else:
             print("✗ Installation encountered issues")
             print("Please review the messages above")
@@ -612,7 +612,7 @@ class NConvertInstaller:
     def run_clean_install(self):
         """Clean Install: purge everything in .\\data\\, .\\temp\\, and .\\VENV\\, then reinstall."""
         self.clear_screen()
-        self.print_header("NConvert-Gradio-Batch — Clean Install")
+        self.print_header("NConvert-Interface — Clean Install")
 
         if not self.check_python_version():
             return False
@@ -651,7 +651,7 @@ class NConvertInstaller:
         print("\n" + "=" * SEPARATOR_LENGTH)
         if success:
             print("✓ Clean installation completed successfully!")
-            print("\nYou can now run NConvert-Gradio-Batch.bat")
+            print("\nYou can now run NConvert-Interface.bat")
         else:
             print("✗ Installation encountered issues")
             print("Please review the messages above")
@@ -663,7 +663,7 @@ class NConvertInstaller:
     def show_menu(self):
         """Display the installer menu and return the user's choice."""
         self.clear_screen()
-        self.print_header("NConvert-Gradio-Batch Installer")
+        self.print_header("NConvert-Interface Installer")
         print()
         print()
         print()
