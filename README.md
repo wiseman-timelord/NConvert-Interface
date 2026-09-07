@@ -46,6 +46,8 @@ Here are my current instructions...
 - If you want to display, for example "AVIF" format, in the Windows Explorer thumbnails, then you should install [Icaros](https://github.com/Xanashi/Icaros/releases), then in the configuration add, in the case of the example ".avif", to the file extension list, and activate it.
 - De-Confustion... Meaning 1: "Batch" - a `*.bat` Windows Batch file. Meaning 2: "Batch" - Repetitive actions done together in sequence.
 - If you want other formats than the ones in the lists, because there are ~500 possible formats, then you will need to manually edit the top of ".\launcher.py".
+
+### CREDITS:
 - Thanks to, DeepSeek and GPT and Claud and Grok and Qwen and GLM, for assistance in programming. 
 - Thanks to [XnView Software](https://www.xnview.com/en/) for, creating and hosting, [NConvert](https://www.xnview.com/en/nconvert/), the binary behind my frontend.
 - NConvert-Batch is the Windows version of [NConvert-Bash](https://github.com/wiseman-timelord/NConvert-Bash).
